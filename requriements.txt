@@ -1,0 +1,7 @@
+psycopg2-binarty
+pandas
+numpy
+SQLAlchemy
+python-dotenv
+ruff
+pytest
