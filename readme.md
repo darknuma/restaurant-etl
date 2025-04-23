@@ -58,6 +58,14 @@ The pipeline follows a traditional ETL (Extract, Transform, Load) pattern:
    - Performs data quality checks
    - Implements error handling and logging
 
+#### Daily Revenue by Category
+
+![Daily Revenue by Category](assets/daily%20revenue%20by%20category.png)
+
+#### Top Selling Items
+
+![Top Selling Items](assets/top%20selling.png)
+
 3. Data Loading:
    - Creates new tables for transformed data
    - Loads results with proper indexing
@@ -65,4 +73,5 @@ The pipeline follows a traditional ETL (Extract, Transform, Load) pattern:
 
 ## Further Improvements
 
- - Better test during
+- Set up for Incremental loading, where I could have done it by using timestamp
+- Include test for incremental model 
