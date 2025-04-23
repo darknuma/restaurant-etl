@@ -7,7 +7,7 @@ This traditional end-to-end data pipeline for processing restaurant order data, 
 ### Requirements
 
 - Python
-- PostgreSQL 16 (installed on your PC)
+- PostgreSQL 16 (installed on your PC), tried using Docker but had issues cos existing ports are utilising it.
 
 ### Installation Steps
 
@@ -75,3 +75,6 @@ The pipeline follows a traditional ETL (Extract, Transform, Load) pattern:
 
 - Set up for Incremental loading, where I could have done it by using timestamp
 - Include test for incremental model 
+- include scheduler and monitoring.
+
+
