@@ -28,8 +28,8 @@ class DatabaseConnection:
     def connect(self):
         try:
             # database credentials
-            db_user = os.getenv("POSTGRES_USER", "postgres")
-            db_password = os.getenv("POSTGRES_PASSWORD", "password")
+            db_user = os.getenv("POSTGRES_USER")
+            db_password = os.getenv("POSTGRES_PASSWORD")
             db_host = os.getenv("POSTGRES_HOST", "localhost")
             db_port = os.getenv("POSTGRES_PORT", "5433")
             db_name = os.getenv("POSTGRES_DB", "restaurant_data")
