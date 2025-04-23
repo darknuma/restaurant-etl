@@ -6,9 +6,8 @@ This traditional end-to-end data pipeline for processing restaurant order data, 
 
 ### Requirements
 
-- Docker and Docker Compose
 - Python
-- PostgreSQL 16 (via Docker)
+- PostgreSQL 16 (installed on your PC)
 
 ### Installation Steps
 
@@ -24,7 +23,6 @@ cd restaurant-etl
 ```bash
 (activate python environment)
 pip install -r requirements.txt
-docker-compose up -d
 python transform.py
 ```
 
@@ -40,7 +38,7 @@ python transform.py
    - Top selling items are determined by quantity sold
 
 3. Technical:
-   - PostgreSQL is running on localhost:5432
+   - PostgreSQL is running on localhost:5433
    - Python environment is utilised
 
 ## Approach Explanation
@@ -49,6 +47,7 @@ The pipeline follows a traditional ETL (Extract, Transform, Load) pattern:
 
 1. Data Ingestion:
    - Raw CSV files are loaded into PostgreSQL staging tables
+   - In Menu_items, created a serial key ID, as the primary key
    - Initial data validation and type checking
    - Error handling for data loading issues
 
@@ -65,3 +64,5 @@ The pipeline follows a traditional ETL (Extract, Transform, Load) pattern:
    - Maintains data integrity with constraints
 
 ## Further Improvements
+
+ - Better test during

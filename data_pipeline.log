@@ -1,0 +1,32 @@
+2025-04-23 12:51:20,905 - INFO - Attempting to connect to PostgreSQL at localhost:5433 with user postgres
+2025-04-23 12:51:20,963 - INFO - Successfully connected to the database
+2025-04-23 12:51:22,177 - INFO - Successfully loaded data from database
+2025-04-23 12:51:22,204 - WARNING - Found 48 duplicate order IDs
+2025-04-23 12:51:22,205 - INFO - Successfully completed all transformations
+2025-04-23 12:51:22,229 - ERROR - Pipeline failed: Execution failed on sql '
+        SELECT
+            name
+        FROM
+            sqlite_master
+        WHERE
+            type IN ('table', 'view')
+            AND name=?;
+        ': syntax error at or near ";"
+LINE 8:             AND name=?;
+                              ^
+
+2025-04-23 12:51:22,232 - INFO - Database connection closed
+2025-04-23 12:53:04,377 - INFO - Attempting to connect to PostgreSQL at localhost:5433 with user postgres
+2025-04-23 12:53:04,424 - INFO - Successfully connected to the database
+2025-04-23 12:53:04,944 - INFO - Successfully loaded data from database
+2025-04-23 12:53:04,958 - WARNING - Found 48 duplicate order IDs
+2025-04-23 12:53:04,959 - INFO - Successfully completed all transformations
+2025-04-23 12:53:05,047 - INFO - Successfully saved transformed results to database
+2025-04-23 12:53:05,047 - INFO - Database connection closed
+2025-04-23 12:58:50,894 - INFO - Attempting to connect to PostgreSQL at localhost:5433 with user postgres
+2025-04-23 12:58:50,938 - INFO - Successfully connected to the database
+2025-04-23 12:58:51,449 - INFO - Successfully loaded data from database
+2025-04-23 12:58:51,465 - WARNING - Found 48 duplicate order IDs
+2025-04-23 12:58:51,466 - INFO - Successfully completed all transformations
+2025-04-23 12:58:51,510 - INFO - Successfully saved transformed results to database
+2025-04-23 12:58:51,533 - INFO - Database connection closed
